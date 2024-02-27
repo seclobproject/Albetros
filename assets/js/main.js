@@ -491,7 +491,6 @@ async function fetchDataAndPopulateTable() {
     }
     const data = await response.json();
     // console.log("Data received:", data);
-
     // Get a reference to the tbody element
     const tbody = document.querySelector("#data-table tbody");
 
@@ -704,7 +703,7 @@ function changeMetaTags(
 }
 
 function fetchDataFromApi() {
-  fetch("https://app.albetros.com:8080/api/admin/view-seo")
+  fetch("https://app.albetros.com/api/admin/view-seo")
     .then((response) => response.json())
     .then((data) => {
       console.log(data);

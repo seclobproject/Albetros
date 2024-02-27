@@ -469,22 +469,36 @@ table {
 .live-rate-container{
   padding-left: 10%;
   max-height: 370px;
-  overflow-y:scroll;
+  /* overflow-y:scroll; */
 
 }
- .live-rate-container::-webkit-scrollbar {
+ /* .live-rate-container::-webkit-scrollbar {
   width: 8px;
 }
 
 /* Track */
-.live-rate-container::-webkit-scrollbar-track {
+/* .live-rate-container::-webkit-scrollbar-track {
+  background:  transparent; 
+}
+  */
+/* Handle */
+/* .live-rate-container::-webkit-scrollbar-thumb {
+  background: #e9f96e ; 
+  border-radius: 10px;
+}  */
+ .table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.table-container::-webkit-scrollbar-track {
   background:  transparent; 
 }
  
 /* Handle */
-.live-rate-container::-webkit-scrollbar-thumb {
+.table-container::-webkit-scrollbar-thumb {
   background: #e9f96e ; 
-  border-radius: 10px;
+  border-radius: 2px;
 }
 /* coin price table */
 .table-container {
@@ -493,6 +507,7 @@ table {
   padding: 20px;
   border-radius: 10px;
   background-color: #171825; /* or 'scroll' */
+  height: 100%;
 }
 .coin-price-table {
   width: 100%;
